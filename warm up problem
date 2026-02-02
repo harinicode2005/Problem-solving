@@ -1,0 +1,89 @@
+1️⃣ Even or Odd
+import java.util.Scanner;
+
+public class EvenOdd {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+        if (n % 2 == 0) {
+            System.out.println("Even");
+        } else {
+            System.out.println("Odd");
+        }
+    }
+}
+
+2️⃣ Largest of 3 Numbers
+import java.util.Scanner;
+
+public class LargestOfThree {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
+
+        if (a >= b && a >= c) {
+            System.out.println(a);
+        } else if (b >= a && b >= c) {
+            System.out.println(b);
+        } else {
+            System.out.println(c);
+        }
+    }
+}
+
+3️⃣ Count Digits in a Number
+import java.util.Scanner;
+
+public class CountDigits {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int count = 0;
+
+        while (n != 0) {
+            count++;
+            n = n / 10;
+        }
+
+        System.out.println(count);
+    }
+}
+
+4️⃣ Sum of Digits
+import java.util.Scanner;
+
+public class SumOfDigits {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int sum = 0;
+
+        while (n != 0) {
+            sum += n % 10;
+            n = n / 10;
+        }
+
+        System.out.println(sum);
+    }
+}
+
+5️⃣ Reverse a Number
+import java.util.Scanner;
+
+public class ReverseNumber {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int rev = 0;
+
+        while (n != 0) {
+            rev = rev * 10 + (n % 10);
+            n = n / 10;
+        }
+
+        System.out.println(rev);
+    }
+}
